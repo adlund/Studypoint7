@@ -1,0 +1,16 @@
+extends layout
+block content
+    h1= 'Todo list:'
+    form(name="input", action="/api/addTodo", method="post")
+        input(name="todo", id="todo", type="text")
+        input(type="submit", value="add or delete todo")
+
+    ul
+        each val in title
+            li= val
+
+
+
+
+
+
